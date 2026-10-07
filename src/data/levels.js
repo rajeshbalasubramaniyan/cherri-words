@@ -4,6 +4,7 @@ export const LEVELS = [
   { id: 'blend', game: 'blend', title: 'Blend It!', blurb: 'Join sounds to make words', stage: 'Blending', emoji: '🧪', color: '#22C55E' },
   { id: 'family', game: 'family', title: 'Word Family Machine', blurb: 'cat → hat → mat', stage: 'Blending', emoji: '⚙️', color: '#3B82F6' },
   { id: 'digraphs', game: 'digraphs', title: 'Two Make One', blurb: 'sh, ch, th & friends', stage: 'Digraphs', emoji: '🤝', color: '#8B5CF6' },
+  { id: 'vowels', game: 'vowels', title: 'Vowel Team Safari', blurb: 'ee, ai, igh, oa, oo & more', stage: 'Vowel teams', emoji: '🦜', color: '#0EA5E9' },
   { id: 'magice', game: 'magice', title: 'Magic E', blurb: 'cap becomes cape!', stage: 'Vowel teams', emoji: '✨', color: '#FBBF24' },
   { id: 'sortsound', game: 'sortsound', title: 'Sound Sorters', blurb: 'Same sound, many spellings', stage: 'Vowel teams', emoji: '🗂️', color: '#C026D3' },
   { id: 'tricky', game: 'tricky', title: 'Rule Breakers', blurb: 'Tricky words to remember', stage: 'Sight words', emoji: '🎭', color: '#EF4444' },

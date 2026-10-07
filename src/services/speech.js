@@ -42,7 +42,10 @@ export function speak(text, { rate = 0.9, pitch = 1.05 } = {}) {
 const PHONEME_CLIPS = {
   s: 's', a: 'a', t: 't', i: 'i', p: 'p', n: 'n', c: 'c', k: 'c', ck: 'c',
   e: 'e', h: 'h', r: 'r', m: 'm', d: 'd', g: 'g', o: 'o', u: 'u', l: 'l',
-  f: 'f', b: 'b', sh: 'sh', ch: 'ch', th: 'th', ng: 'ng',
+  f: 'f', b: 'b', sh: 'sh', ch: 'ch', th: 'th', ng: 'ng', qu: 'qu',
+  // vowel-team sounds (keyed by sound, not spelling — "ow" alone is the cow sound)
+  ee: 'ee', ai: 'ai', oa: 'oa', igh: 'igh', oo: 'oo', oo_short: 'oo_short',
+  ow: 'ow', oi: 'oi', ar: 'ar', or: 'or', er: 'er',
 }
 const clipCache = {}
 let currentClip = null

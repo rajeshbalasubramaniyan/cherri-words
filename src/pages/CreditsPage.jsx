@@ -22,10 +22,15 @@ export default function CreditsPage({ onHome }) {
               </button>
               <div className="min-w-0">
                 <p className="font-display text-cherry-deep">{c.sound}</p>
-                <a href={c.url} target="_blank" rel="noreferrer" className="text-[11px] text-ink-soft underline break-all">
-                  {c.source}
-                </a>
-                <span className="text-[10px] text-ink-soft/60"> · {c.license}</span>
+                {c.source.split(' + ').map((name, k) => (
+                  <span key={k}>
+                    {k > 0 && <span className="text-[11px] text-ink-soft"> + </span>}
+                    <a href={(c.urls || [c.url])[k]} target="_blank" rel="noreferrer" className="text-[11px] text-ink-soft underline break-all">
+                      {name}
+                    </a>
+                  </span>
+                ))}
+                <span className="text-[10px] text-ink-soft/60"> · {c.license}{c.note ? ` · ${c.note}` : ''}</span>
               </div>
             </div>
           ))}

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Celebrate, { GameHeader } from '../components/Celebrate'
 import { MAGIC_E } from '../data/words'
-import { speak } from '../services/speech'
+import { speak, playPhoneme } from '../services/speech'
 
 export default function MagicEGame({ onHome, onComplete }) {
   const [i, setI] = useState(0)
@@ -14,7 +14,7 @@ export default function MagicEGame({ onHome, onComplete }) {
   const castSpell = () => {
     setMagic(true)
     speak(item.short, { rate: 0.8 })
-    setTimeout(() => speak(item.long, { rate: 0.8 }), 900)
+    setTimeout(() => playPhoneme(item.sound, item.long, item.long), 900)
   }
 
   const next = () => {

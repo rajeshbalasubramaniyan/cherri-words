@@ -16,6 +16,7 @@ import RulesGame from './pages/RulesGame'
 import HomophoneGame from './pages/HomophoneGame'
 import PunctuationGame from './pages/PunctuationGame'
 import CreditsPage from './pages/CreditsPage'
+import VowelSafari from './pages/VowelSafari'
 import { initVoices } from './services/speech'
 
 const PROGRESS_KEY = 'cherri-words-progress'
@@ -40,6 +41,7 @@ export default function App() {
     blend: <BlendGame onHome={goMap} onComplete={() => markDone('blend')} />,
     family: <FamilyGame onHome={goMap} onComplete={() => markDone('family')} />,
     digraphs: <DigraphsGame onHome={goMap} onComplete={() => markDone('digraphs')} />,
+    vowels: <VowelSafari onHome={goMap} onComplete={() => markDone('vowels')} />,
     magice: <MagicEGame onHome={goMap} onComplete={() => markDone('magice')} />,
     sortsound: <SortSoundGame onHome={goMap} onComplete={() => markDone('sortsound')} />,
     tricky: <TrickyGame onHome={goMap} onComplete={() => markDone('tricky')} />,

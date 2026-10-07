@@ -21,7 +21,7 @@ export const WORD_FAMILIES = [
 // Vowel teams: the SAME sound spelled different ways — the sort-by-sound challenge.
 export const VOWEL_TEAMS = [
   {
-    id: 'long-e', sound: 'long E', say: 'eee', color: '#22C55E',
+    id: 'long-e', sound: 'long E', say: 'eee', clip: 'ee', color: '#22C55E',
     words: [
       { word: 'tree', spelling: 'ee' },
       { word: 'bee', spelling: 'ee' },
@@ -32,7 +32,7 @@ export const VOWEL_TEAMS = [
     ],
   },
   {
-    id: 'long-a', sound: 'long A', say: 'ay', color: '#3B82F6',
+    id: 'long-a', sound: 'long A', say: 'ay', clip: 'ai', color: '#3B82F6',
     words: [
       { word: 'rain', spelling: 'ai' },
       { word: 'train', spelling: 'ai' },
@@ -43,7 +43,7 @@ export const VOWEL_TEAMS = [
     ],
   },
   {
-    id: 'long-o', sound: 'long O', say: 'oh', color: '#FBBF24',
+    id: 'long-o', sound: 'long O', say: 'oh', clip: 'oa', color: '#FBBF24',
     words: [
       { word: 'boat', spelling: 'oa' },
       { word: 'coat', spelling: 'oa' },
@@ -60,9 +60,9 @@ export const TRICKY_WORDS = ['the', 'said', 'was', 'one', 'come', 'you', 'they',
 
 // Magic-e pairs: short vowel -> long vowel when e is added.
 export const MAGIC_E = [
-  { short: 'cap', long: 'cape', emoji: '🦸' },
-  { short: 'kit', long: 'kite', emoji: '🪁' },
-  { short: 'hop', long: 'hope', emoji: '🤞' },
-  { short: 'tub', long: 'tube', emoji: '🧪' },
-  { short: 'pin', long: 'pine', emoji: '🌲' },
+  { short: 'cap', long: 'cape', emoji: '🦸', sound: 'ai' },
+  { short: 'kit', long: 'kite', emoji: '🪁', sound: 'igh' },
+  { short: 'hop', long: 'hope', emoji: '🤞', sound: 'oa' },
+  { short: 'tub', long: 'tube', emoji: '🧪', sound: 'oo' },
+  { short: 'pin', long: 'pine', emoji: '🌲', sound: 'igh' },
 ]

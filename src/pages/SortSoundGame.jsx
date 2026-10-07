@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import Celebrate, { GameHeader, SpeakerButton } from '../components/Celebrate'
 import { VOWEL_TEAMS } from '../data/words'
-import { speak } from '../services/speech'
+import { speak, playPhoneme } from '../services/speech'
 
 function shuffle(a) { return [...a].sort(() => Math.random() - 0.5) }
 
@@ -50,7 +50,7 @@ export default function SortSoundGame({ onHome, onComplete }) {
         <p className="text-ink-soft text-sm mb-1">Find every word with the</p>
         <div className="flex items-center gap-3">
           <span className="font-display text-3xl" style={{ color: target.color }}>{target.sound}</span>
-          <SpeakerButton onClick={() => speak(target.say, { rate: 0.6 })} size="sm" />
+          <SpeakerButton onClick={() => playPhoneme(target.clip, target.say, null)} size="sm" label={`Hear the ${target.sound} sound`} />
         </div>
         <p className="text-ink-soft/50 text-xs mt-1">(it can be spelled different ways!)</p>
       </div>

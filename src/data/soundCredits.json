@@ -152,5 +152,143 @@
   "source": "Velar nasal.ogg",
   "url": "https://commons.wikimedia.org/wiki/File:Velar_nasal.ogg",
   "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "qu (kw)",
+  "file": "qu.mp3",
+  "source": "Voiceless velar plosive.ogg + Voiced labio-velar approximant.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_velar_plosive.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Voiceless_velar_plosive.ogg",
+   "https://commons.wikimedia.org/wiki/File:Voiced_labio-velar_approximant.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": "blend of two recordings"
+ },
+ {
+  "sound": "long e (ee, ea)",
+  "file": "ee.mp3",
+  "source": "Close front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Close_front_unrounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Close_front_unrounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": ""
+ },
+ {
+  "sound": "long a (ai, ay)",
+  "file": "ai.mp3",
+  "source": "Close-mid front unrounded vowel.ogg + Near-close near-front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Close-mid_front_unrounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Close-mid_front_unrounded_vowel.ogg",
+   "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": "blend of two recordings"
+ },
+ {
+  "sound": "long i (igh, ie)",
+  "file": "igh.mp3",
+  "source": "Open front unrounded vowel.ogg + Near-close near-front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg",
+   "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": "blend of two recordings"
+ },
+ {
+  "sound": "long o (oa, ow)",
+  "file": "oa.mp3",
+  "source": "Close-mid back rounded vowel.ogg + Near-close near-back rounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Close-mid_back_rounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Close-mid_back_rounded_vowel.ogg",
+   "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": "blend of two recordings"
+ },
+ {
+  "sound": "long oo (moon)",
+  "file": "oo.mp3",
+  "source": "Close back rounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Close_back_rounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Close_back_rounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": ""
+ },
+ {
+  "sound": "short oo (book)",
+  "file": "oo_short.mp3",
+  "source": "Near-close near-back rounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": ""
+ },
+ {
+  "sound": "ow / ou (cow)",
+  "file": "ow.mp3",
+  "source": "Open front unrounded vowel.ogg + Near-close near-back rounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg",
+   "https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": "blend of two recordings"
+ },
+ {
+  "sound": "oi / oy (coin)",
+  "file": "oi.mp3",
+  "source": "Open-mid back rounded vowel.ogg + Near-close near-front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg",
+   "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": "blend of two recordings"
+ },
+ {
+  "sound": "ar (car)",
+  "file": "ar.mp3",
+  "source": "Open back unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open_back_unrounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Open_back_unrounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": ""
+ },
+ {
+  "sound": "or / aw / au (fork)",
+  "file": "or.mp3",
+  "source": "Open-mid back rounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": ""
+ },
+ {
+  "sound": "er / ir / ur (bird)",
+  "file": "er.mp3",
+  "source": "Open-mid central unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg",
+  "urls": [
+   "https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg"
+  ],
+  "license": "CC BY-SA 3.0",
+  "note": ""
  }
 ]

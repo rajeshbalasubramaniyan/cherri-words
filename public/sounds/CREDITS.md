@@ -1,8 +1,8 @@
 # Phoneme audio credits
 
-All sounds are trimmed, time-stretched and loudness-normalized excerpts of recordings from Wikimedia Commons, used under **CC BY-SA 3.0** (https://creativecommons.org/licenses/by-sa/3.0/). These modified clips are likewise shared under CC BY-SA 3.0.
+All sounds are trimmed, time-stretched, pitch-matched and loudness-normalized excerpts of recordings from Wikimedia Commons, used under **CC BY-SA 3.0** (https://creativecommons.org/licenses/by-sa/3.0/). Glide sounds (long a, long i, long o, ow, oi) and qu are blends of two recordings. These modified clips are likewise shared under CC BY-SA 3.0.
 
-| Sound | File | Original recording | License |
+| Sound | File | Original recording(s) | License |
 |---|---|---|---|
 | s | s.mp3 | [Voiceless alveolar sibilant.ogg](https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_sibilant.ogg) | CC BY-SA 3.0 |
 | a (as in apple) | a.mp3 | [Near-open front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-open_front_unrounded_vowel.ogg) | CC BY-SA 3.0 |
@@ -26,3 +26,15 @@ All sounds are trimmed, time-stretched and loudness-normalized excerpts of recor
 | ch | ch.mp3 | [Voiceless palato-alveolar affricate.ogg](https://commons.wikimedia.org/wiki/File:Voiceless_palato-alveolar_affricate.ogg) | CC BY-SA 3.0 |
 | th | th.mp3 | [Voiceless dental fricative.ogg](https://commons.wikimedia.org/wiki/File:Voiceless_dental_fricative.ogg) | CC BY-SA 3.0 |
 | ng | ng.mp3 | [Velar nasal.ogg](https://commons.wikimedia.org/wiki/File:Velar_nasal.ogg) | CC BY-SA 3.0 |
+| qu (kw) | qu.mp3 | [Voiceless velar plosive.ogg](https://commons.wikimedia.org/wiki/File:Voiceless_velar_plosive.ogg) + [Voiced labio-velar approximant.ogg](https://commons.wikimedia.org/wiki/File:Voiced_labio-velar_approximant.ogg) | CC BY-SA 3.0 |
+| long e (ee, ea) | ee.mp3 | [Close front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Close_front_unrounded_vowel.ogg) | CC BY-SA 3.0 |
+| long a (ai, ay) | ai.mp3 | [Close-mid front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Close-mid_front_unrounded_vowel.ogg) + [Near-close near-front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg) | CC BY-SA 3.0 |
+| long i (igh, ie) | igh.mp3 | [Open front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg) + [Near-close near-front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg) | CC BY-SA 3.0 |
+| long o (oa, ow) | oa.mp3 | [Close-mid back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Close-mid_back_rounded_vowel.ogg) + [Near-close near-back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg) | CC BY-SA 3.0 |
+| long oo (moon) | oo.mp3 | [Close back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Close_back_rounded_vowel.ogg) | CC BY-SA 3.0 |
+| short oo (book) | oo_short.mp3 | [Near-close near-back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg) | CC BY-SA 3.0 |
+| ow / ou (cow) | ow.mp3 | [Open front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg) + [Near-close near-back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg) | CC BY-SA 3.0 |
+| oi / oy (coin) | oi.mp3 | [Open-mid back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg) + [Near-close near-front unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg) | CC BY-SA 3.0 |
+| ar (car) | ar.mp3 | [Open back unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Open_back_unrounded_vowel.ogg) | CC BY-SA 3.0 |
+| or / aw / au (fork) | or.mp3 | [Open-mid back rounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg) | CC BY-SA 3.0 |
+| er / ir / ur (bird) | er.mp3 | [Open-mid central unrounded vowel.ogg](https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg) | CC BY-SA 3.0 |
