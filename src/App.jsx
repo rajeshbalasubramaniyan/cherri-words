@@ -1,0 +1,51 @@
+import { useState, useEffect } from 'react'
+import WelcomePage from './pages/WelcomePage'
+import LevelMap from './pages/LevelMap'
+import SoundSafari from './pages/SoundSafari'
+import BlendGame from './pages/BlendGame'
+import FamilyGame from './pages/FamilyGame'
+import DigraphsGame from './pages/DigraphsGame'
+import MagicEGame from './pages/MagicEGame'
+import SortSoundGame from './pages/SortSoundGame'
+import TrickyGame from './pages/TrickyGame'
+import GrammarGame from './pages/GrammarGame'
+import SentenceGame from './pages/SentenceGame'
+import { initVoices } from './services/speech'
+
+const PROGRESS_KEY = 'cherri-words-progress'
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}') } catch { return {} }
+}
+
+export default function App() {
+  const [screen, setScreen] = useState('welcome')
+  const [completed, setCompleted] = useState(loadProgress)
+
+  useEffect(() => { initVoices() }, [])
+  useEffect(() => {
+    try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(completed)) } catch { /* ignore */ }
+  }, [completed])
+
+  const goMap = () => setScreen('map')
+  const markDone = (id) => { setCompleted(p => ({ ...p, [id]: true })); setScreen('map') }
+
+  const games = {
+    sounds: <SoundSafari onHome={goMap} onComplete={() => markDone('sounds')} />,
+    blend: <BlendGame onHome={goMap} onComplete={() => markDone('blend')} />,
+    family: <FamilyGame onHome={goMap} onComplete={() => markDone('family')} />,
+    digraphs: <DigraphsGame onHome={goMap} onComplete={() => markDone('digraphs')} />,
+    magice: <MagicEGame onHome={goMap} onComplete={() => markDone('magice')} />,
+    sortsound: <SortSoundGame onHome={goMap} onComplete={() => markDone('sortsound')} />,
+    tricky: <TrickyGame onHome={goMap} onComplete={() => markDone('tricky')} />,
+    grammar: <GrammarGame onHome={goMap} onComplete={() => markDone('grammar')} />,
+    sentence: <SentenceGame onHome={goMap} onComplete={() => markDone('sentence')} />,
+  }
+
+  return (
+    <div className="relative min-h-[100dvh]">
+      {screen === 'welcome' && <WelcomePage onStart={goMap} />}
+      {screen === 'map' && <LevelMap onHome={() => setScreen('welcome')} onPlay={(g) => setScreen(g)} completed={completed} />}
+      {games[screen]}
+    </div>
+  )
+}
