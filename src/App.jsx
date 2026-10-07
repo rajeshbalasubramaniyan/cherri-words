@@ -10,6 +10,11 @@ import SortSoundGame from './pages/SortSoundGame'
 import TrickyGame from './pages/TrickyGame'
 import GrammarGame from './pages/GrammarGame'
 import SentenceGame from './pages/SentenceGame'
+import SyllableGame from './pages/SyllableGame'
+import MorphGame from './pages/MorphGame'
+import RulesGame from './pages/RulesGame'
+import HomophoneGame from './pages/HomophoneGame'
+import PunctuationGame from './pages/PunctuationGame'
 import { initVoices } from './services/speech'
 
 const PROGRESS_KEY = 'cherri-words-progress'
@@ -39,6 +44,11 @@ export default function App() {
     tricky: <TrickyGame onHome={goMap} onComplete={() => markDone('tricky')} />,
     grammar: <GrammarGame onHome={goMap} onComplete={() => markDone('grammar')} />,
     sentence: <SentenceGame onHome={goMap} onComplete={() => markDone('sentence')} />,
+    syllables: <SyllableGame onHome={goMap} onComplete={() => markDone('syllables')} />,
+    morph: <MorphGame onHome={goMap} onComplete={() => markDone('morph')} />,
+    rules: <RulesGame onHome={goMap} onComplete={() => markDone('rules')} />,
+    homophones: <HomophoneGame onHome={goMap} onComplete={() => markDone('homophones')} />,
+    punctuation: <PunctuationGame onHome={goMap} onComplete={() => markDone('punctuation')} />,
   }
 
   return (

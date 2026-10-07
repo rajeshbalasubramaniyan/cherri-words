@@ -9,6 +9,11 @@ export const LEVELS = [
   { id: 'tricky', game: 'tricky', title: 'Rule Breakers', blurb: 'Tricky words to remember', stage: 'Sight words', emoji: '🎭', color: '#EF4444' },
   { id: 'grammar', game: 'grammar', title: 'Word Jobs', blurb: 'Naming, doing & describing words', stage: 'Grammar', emoji: '🏷️', color: '#0EA5E9' },
   { id: 'sentence', game: 'sentence', title: 'Sentence Builder', blurb: 'Put words in the right order', stage: 'Sentences', emoji: '🧱', color: '#16A34A' },
+  { id: 'syllables', game: 'syllables', title: 'Clap the Beats', blurb: 'Count the syllables in a word', stage: 'Big Words', emoji: '👏', color: '#F97316' },
+  { id: 'morph', game: 'morph', title: 'Word Builder', blurb: 'Add beginnings & endings', stage: 'Big Words', emoji: '🔧', color: '#0D9488' },
+  { id: 'rules', game: 'rules', title: 'Spelling Rules', blurb: 'hop → hopping, make → making', stage: 'Big Words', emoji: '📜', color: '#DB2777' },
+  { id: 'homophones', game: 'homophones', title: 'Sound-Alikes', blurb: 'to, too or two?', stage: 'Tricky English', emoji: '👂', color: '#9333EA' },
+  { id: 'punctuation', game: 'punctuation', title: 'Punctuation Power', blurb: 'Full stop, question or shout?', stage: 'Tricky English', emoji: '❗', color: '#DC2626' },
 ]
 
-export const STAGES = ['Sounds', 'Blending', 'Digraphs', 'Vowel teams', 'Sight words', 'Grammar', 'Sentences']
+export const STAGES = ['Sounds', 'Blending', 'Digraphs', 'Vowel teams', 'Sight words', 'Grammar', 'Sentences', 'Big Words', 'Tricky English']
