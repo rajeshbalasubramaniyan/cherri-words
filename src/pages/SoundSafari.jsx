@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { GameHeader } from '../components/Celebrate'
 import { SOUND_GROUPS } from '../data/sounds'
-import { speakSound } from '../services/speech'
+import { playPhoneme } from '../services/speech'
 
 export default function SoundSafari({ onHome, onComplete }) {
   const [tapped, setTapped] = useState(new Set())
@@ -10,7 +10,7 @@ export default function SoundSafari({ onHome, onComplete }) {
   const done = tapped.size >= Math.min(6, allSounds.length)
 
   const tap = (s) => {
-    speakSound(s.cue, s.word)
+    playPhoneme(s.g, s.cue, s.word)
     setTapped(prev => new Set(prev).add(s.g))
   }
 

@@ -15,6 +15,7 @@ import MorphGame from './pages/MorphGame'
 import RulesGame from './pages/RulesGame'
 import HomophoneGame from './pages/HomophoneGame'
 import PunctuationGame from './pages/PunctuationGame'
+import CreditsPage from './pages/CreditsPage'
 import { initVoices } from './services/speech'
 
 const PROGRESS_KEY = 'cherri-words-progress'
@@ -53,7 +54,8 @@ export default function App() {
 
   return (
     <div className="relative min-h-[100dvh]">
-      {screen === 'welcome' && <WelcomePage onStart={goMap} />}
+      {screen === 'welcome' && <WelcomePage onStart={goMap} onCredits={() => setScreen('credits')} />}
+      {screen === 'credits' && <CreditsPage onHome={() => setScreen('welcome')} />}
       {screen === 'map' && <LevelMap onHome={() => setScreen('welcome')} onPlay={(g) => setScreen(g)} completed={completed} />}
       {games[screen]}
     </div>

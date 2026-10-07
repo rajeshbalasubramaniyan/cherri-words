@@ -7,7 +7,7 @@ const floatLetters = [
   { ch: 'z', x: '82%', y: '68%', c: '#FBBF24', d: 0.9 },
 ]
 
-export default function WelcomePage({ onStart }) {
+export default function WelcomePage({ onStart, onCredits }) {
   return (
     <div className="min-h-[100dvh] flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
       {floatLetters.map((l, i) => (
@@ -47,7 +47,8 @@ export default function WelcomePage({ onStart }) {
 
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ delay: 1.2 }}
         className="absolute bottom-4 text-ink-soft/50 text-[10px]">
-        A CHERRI GROUP product · Built with love in Bengaluru
+        A CHERRI GROUP product · Built with love in Bengaluru ·{' '}
+        <button onClick={onCredits} className="underline cursor-pointer">Sound credits</button>
       </motion.p>
     </div>
   )

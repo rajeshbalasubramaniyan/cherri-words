@@ -1,0 +1,156 @@
+[
+ {
+  "sound": "s",
+  "file": "s.mp3",
+  "source": "Voiceless alveolar sibilant.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_sibilant.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "a (as in apple)",
+  "file": "a.mp3",
+  "source": "Near-open front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Near-open_front_unrounded_vowel.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "t",
+  "file": "t.mp3",
+  "source": "Voiceless alveolar plosive.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_plosive.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "i (as in igloo)",
+  "file": "i.mp3",
+  "source": "Near-close near-front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "p",
+  "file": "p.mp3",
+  "source": "Voiceless bilabial plosive.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_bilabial_plosive.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "n",
+  "file": "n.mp3",
+  "source": "Alveolar nasal.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Alveolar_nasal.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "c / k",
+  "file": "c.mp3",
+  "source": "Voiceless velar plosive.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_velar_plosive.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "e (as in egg)",
+  "file": "e.mp3",
+  "source": "Open-mid front unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open-mid_front_unrounded_vowel.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "h",
+  "file": "h.mp3",
+  "source": "Voiceless glottal fricative.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_glottal_fricative.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "r",
+  "file": "r.mp3",
+  "source": "Alveolar approximant.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "m",
+  "file": "m.mp3",
+  "source": "Bilabial nasal.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Bilabial_nasal.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "d",
+  "file": "d.mp3",
+  "source": "Voiced alveolar plosive.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiced_alveolar_plosive.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "g",
+  "file": "g.mp3",
+  "source": "Voiced velar plosive 02.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiced_velar_plosive_02.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "o (as in orange)",
+  "file": "o.mp3",
+  "source": "Open back rounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open_back_rounded_vowel.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "u (as in umbrella)",
+  "file": "u.mp3",
+  "source": "Open-mid back unrounded vowel.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Open-mid_back_unrounded_vowel.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "l",
+  "file": "l.mp3",
+  "source": "Alveolar lateral approximant.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Alveolar_lateral_approximant.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "f",
+  "file": "f.mp3",
+  "source": "Voiceless labiodental fricative.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_labiodental_fricative.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "b",
+  "file": "b.mp3",
+  "source": "Voiced bilabial plosive.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiced_bilabial_plosive.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "sh",
+  "file": "sh.mp3",
+  "source": "Voiceless palato-alveolar sibilant.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_palato-alveolar_sibilant.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "ch",
+  "file": "ch.mp3",
+  "source": "Voiceless palato-alveolar affricate.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_palato-alveolar_affricate.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "th",
+  "file": "th.mp3",
+  "source": "Voiceless dental fricative.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Voiceless_dental_fricative.ogg",
+  "license": "CC BY-SA 3.0"
+ },
+ {
+  "sound": "ng",
+  "file": "ng.mp3",
+  "source": "Velar nasal.ogg",
+  "url": "https://commons.wikimedia.org/wiki/File:Velar_nasal.ogg",
+  "license": "CC BY-SA 3.0"
+ }
+]

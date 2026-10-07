@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Celebrate, { GameHeader } from '../components/Celebrate'
 import { BLEND_WORDS } from '../data/words'
-import { speak, speakBlend } from '../services/speech'
+import { playPhoneme, playBlend } from '../services/speech'
 
 export default function BlendGame({ onHome, onComplete }) {
   const [round, setRound] = useState(0)
@@ -14,12 +14,12 @@ export default function BlendGame({ onHome, onComplete }) {
   const allRevealed = revealed.length === item.sounds.length
 
   const tapSound = (i) => {
-    speak(item.sounds[i], { rate: 0.6 })
+    playPhoneme(item.sounds[i], item.sounds[i], null)
     setRevealed(prev => prev.includes(i) ? prev : [...prev, i])
   }
 
   const blend = () => {
-    speakBlend(item.sounds, item.word)
+    playBlend(item.sounds, item.word)
     setBlended(true)
   }
 

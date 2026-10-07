@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { GameHeader } from '../components/Celebrate'
 import { DIGRAPHS } from '../data/sounds'
-import { speakSound } from '../services/speech'
+import { playPhoneme } from '../services/speech'
 
 export default function DigraphsGame({ onHome, onComplete }) {
   const [tapped, setTapped] = useState(new Set())
   const done = tapped.size >= DIGRAPHS.length
 
   const tap = (d) => {
-    speakSound(d.cue, d.word)
+    playPhoneme(d.g, d.cue, d.word)
     setTapped(prev => new Set(prev).add(d.g))
   }
 
