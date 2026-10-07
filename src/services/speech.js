@@ -61,7 +61,7 @@ export function playPhoneme(grapheme, cue, exampleWord) {
   if (!id || typeof Audio === 'undefined') { speakSound(cue, exampleWord); return }
   stopSpeech()
   if (currentClip) { currentClip.pause(); currentClip.currentTime = 0 }
-  const clip = clipCache[id] || (clipCache[id] = new Audio(`/sounds/${id}.mp3`))
+  const clip = clipCache[id] || (clipCache[id] = new Audio(`${import.meta.env.BASE_URL}sounds/${id}.mp3`))
   currentClip = clip
   clip.currentTime = 0
   clip.onended = () => { if (exampleWord) setTimeout(() => speak(exampleWord), 250) }
@@ -76,7 +76,7 @@ export function playBlend(sounds, word) {
   const next = () => {
     if (i >= sounds.length) { setTimeout(() => speak(word, { rate: 0.85, pitch: 1.08 }), 300); return }
     const id = PHONEME_CLIPS[sounds[i++]]
-    const clip = clipCache[id] || (clipCache[id] = new Audio(`/sounds/${id}.mp3`))
+    const clip = clipCache[id] || (clipCache[id] = new Audio(`${import.meta.env.BASE_URL}sounds/${id}.mp3`))
     currentClip = clip
     clip.currentTime = 0
     clip.onended = () => setTimeout(next, 280)
