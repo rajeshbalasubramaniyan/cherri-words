@@ -7,5 +7,6 @@ import Blend from './Blend'
 import WordFamily from './WordFamily'
 import Clap from './Clap'
 import OrderWords from './OrderWords'
+import Story from './Story'
 
-export const ENGINES = { Choose, TapAll, Transform, SpellIt, ExploreCards, Blend, WordFamily, Clap, OrderWords }
+export const ENGINES = { Choose, TapAll, Transform, SpellIt, ExploreCards, Blend, WordFamily, Clap, OrderWords, Story }
