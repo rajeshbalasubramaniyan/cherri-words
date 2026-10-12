@@ -3,6 +3,7 @@ import WelcomePage from './pages/WelcomePage'
 import BandPicker from './pages/BandPicker'
 import BandMap from './pages/BandMap'
 import CreditsPage from './pages/CreditsPage'
+import { SiteNav, SiteFooter } from './components/SiteChrome'
 import { ENGINES } from './engines'
 import { getBand } from './curriculum'
 import { initVoices, stopSpeech } from './services/speech'
@@ -50,6 +51,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-[100dvh]">
+      <SiteNav current="words" />
       {screen === 'welcome' && <WelcomePage onStart={start} onCredits={() => setScreen('credits')} />}
       {screen === 'credits' && <CreditsPage onHome={() => setScreen('welcome')} />}
       {screen === 'bands' && <BandPicker progress={progress} onPick={pickBand} onHome={() => setScreen('welcome')} />}
@@ -57,6 +59,7 @@ export default function App() {
         <BandMap band={band} progress={progress} onPlay={play}
           onChangeBand={() => setScreen('bands')} onHome={() => setScreen('welcome')} />
       )}
+      <SiteFooter current="words" />
     </div>
   )
 }
