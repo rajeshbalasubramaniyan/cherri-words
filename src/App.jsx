@@ -51,7 +51,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-[100dvh]">
-      <SiteNav current="words" />
+      <SiteNav />
       {screen === 'welcome' && <WelcomePage onStart={start} onCredits={() => setScreen('credits')} />}
       {screen === 'credits' && <CreditsPage onHome={() => setScreen('welcome')} />}
       {screen === 'bands' && <BandPicker progress={progress} onPick={pickBand} onHome={() => setScreen('welcome')} />}
@@ -59,7 +59,7 @@ export default function App() {
         <BandMap band={band} progress={progress} onPlay={play}
           onChangeBand={() => setScreen('bands')} onHome={() => setScreen('welcome')} />
       )}
-      <SiteFooter current="words" />
+      <SiteFooter />
     </div>
   )
 }
