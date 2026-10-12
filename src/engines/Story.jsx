@@ -3,15 +3,21 @@ import { motion } from 'framer-motion'
 import { GameHeader, SpeakerButton } from '../components/Celebrate'
 import { speak, stopSpeech } from '../services/speech'
 import { Progress, NextButton } from './shared'
+import CLIPS from '../data/storyClips.json'
 import Choose from './Choose'
 import TapAll from './TapAll'
 
 const PLAY = { Choose, TapAll }
 
+// Recorded narration lives in public/story/<levelId>-<page>.mp3 and is listed in storyClips.json.
+// Pages without a clip fall back to the device voice.
+let clip = null
+const stopClip = () => { if (clip) { clip.pause(); clip = null } }
+
 // A short illustrated story, then a game about it.
 // content: { story: [{ emoji, title, text, words?: [] }], then: 'Choose' | 'TapAll', ...content for that game }
 export default function Story(props) {
-  const { title, color, content, onHome } = props
+  const { title, color, content, onHome, levelId } = props
   const pages = content.story
   const [p, setP] = useState(0)
   const [playing, setPlaying] = useState(false)
@@ -23,11 +29,20 @@ export default function Story(props) {
 
   const page = pages[p]
   const isLast = p === pages.length - 1
-  const next = () => { stopSpeech(); if (isLast) setPlaying(true); else setP(p + 1) }
+  const quiet = () => { stopSpeech(); stopClip() }
+  const read = () => {
+    quiet()
+    const key = `${levelId}-${p}`
+    const fallback = () => speak(`${page.title}. ${page.say || page.text}`, { rate: 0.9 })
+    if (!CLIPS.includes(key)) return fallback()
+    clip = new Audio(`${import.meta.env.BASE_URL}story/${key}.mp3`)
+    clip.play().catch(fallback)
+  }
+  const next = () => { quiet(); if (isLast) setPlaying(true); else setP(p + 1) }
 
   return (
     <div className="min-h-[100dvh] flex flex-col relative">
-      <GameHeader title={title} onHome={() => { stopSpeech(); onHome() }} right={`${p + 1}/${pages.length}`} />
+      <GameHeader title={title} onHome={() => { quiet(); onHome() }} right={`${p + 1}/${pages.length}`} />
       <Progress total={pages.length} current={p} color={color} />
 
       <div className="flex-1 flex flex-col items-center justify-center px-6 text-center">
@@ -40,7 +55,7 @@ export default function Story(props) {
           {page.words && (
             <div className="flex flex-wrap justify-center gap-2 mt-4">
               {page.words.map(w => (
-                <motion.button key={w} whileTap={{ scale: 0.92 }} onClick={() => speak(w, { rate: 0.8 })}
+                <motion.button key={w} whileTap={{ scale: 0.92 }} onClick={() => { stopClip(); speak(w, { rate: 0.8 }) }}
                   className="font-display text-xl px-3 py-1.5 rounded-xl bg-white shadow-sm cursor-pointer" style={{ color }}>
                   {w}
                 </motion.button>
@@ -48,7 +63,7 @@ export default function Story(props) {
             </div>
           )}
           <div className="mt-4 flex justify-center">
-            <SpeakerButton size="sm" label="Read it to me" onClick={() => speak(`${page.title}. ${page.say || page.text}`, { rate: 0.9 })} />
+            <SpeakerButton size="sm" label="Read it to me" onClick={read} />
           </div>
         </motion.div>
       </div>

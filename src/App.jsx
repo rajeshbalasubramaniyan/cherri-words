@@ -44,7 +44,7 @@ export default function App() {
     return (
       <div className="relative min-h-[100dvh]">
         <Engine key={`${band.id}/${level.id}`} title={level.title} color={band.color} content={level.content}
-          onHome={backToMap} onComplete={complete} />
+          levelId={level.id} onHome={backToMap} onComplete={complete} />
       </div>
     )
   }
